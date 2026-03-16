@@ -8,9 +8,14 @@ on:
         required: true
         default: "main"
       environment:
-        description: "Environment name (dev, prd, pre)"
+        type: choice
+        description: "Environment name"
         required: true
         default: "dev"
+        options:
+          - dev
+          - prd
+          - pre
       application:
         description: "Application name"
         required: false
