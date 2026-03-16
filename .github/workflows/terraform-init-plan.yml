@@ -4,9 +4,13 @@ on:
   workflow_dispatch:
     inputs:
       branch:
+        type: choice
         description: "Branch name to checkout"
         required: true
         default: "main"
+        options:
+          - main
+          - feature
       environment:
         type: choice
         description: "Environment name"
