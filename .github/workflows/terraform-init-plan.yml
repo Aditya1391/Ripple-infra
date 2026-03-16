@@ -14,7 +14,7 @@ on:
       application:
         description: "Application name"
         required: false
-        default: ""
+        default: "1"
 
 jobs:
   terraform:
